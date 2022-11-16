@@ -1,0 +1,48 @@
+//explicit conversion
+//1.number
+let result;
+result=Number('204');
+console.log(result);
+result=Number(true);
+console.log(result);
+result=Number(null);
+console.log(result);
+result=Number('saish');
+console.log(result);
+result=Number(undefined);
+console.log(result);
+
+//parseInt(),parseFloat(),+,math.floor()-
+result=parseInt('20.36');
+console.log(result);
+result=parseFloat('20.36');
+console.log(result);
+result=+20.36;
+console.log(result);
+result=Math.floor('20.36');
+console.log(result);
+
+//string conversion
+result=String(20);
+console.log(result);
+result=String(null);
+console.log(result);
+result=String(undefined);
+console.log(result);
+result=String(NaN);
+console.log(result);
+result=String(true);
+console.log(result);
+ 
+//using toString
+result=true.toString();
+console.log(result);
+result=(234).toString();
+console.log(result);
+//Boolean
+result=Boolean(0);
+console.log(result);
+result=Boolean(1);
+console.log(result);
+result=Boolean(' ');
+console.log(result);
