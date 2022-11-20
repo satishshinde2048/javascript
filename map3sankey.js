@@ -42,7 +42,7 @@ let names = [
     let op= names.map((e,i)=>{
     let temp = score.find(element=> element.roll === e.roll)
     if(temp.score) {
-      e.score = temp.score;
+      e.score= temp.score;
     }
     return e;
   });
