@@ -7,3 +7,8 @@ if(a>b)
     console.log(name);
 }
 console.log(name);
+
+
+fname='satish';
+lname='shinde';
+console.log(fname+lname);

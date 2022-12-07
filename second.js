@@ -6,4 +6,4 @@ export function index(){
 }
 export default function forth(){
   console.log('default export')
-}
+};

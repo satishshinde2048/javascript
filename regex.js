@@ -1,0 +1,14 @@
+let pattern=/abc/;
+let String='satishabc';
+let pattern2=new RegExp('abc');
+console.log(pattern2.test(String));
+let pattern3=/\ba...s\b/;
+console.log(pattern3.test('alias'));
+let pattern4=/^a...s$/;
+console.log(pattern4.test('aliazs'));
+let pattern5=/\^...\$/;
+console.log(pattern5.test('^lia$'));
+let pattern6=new RegExp(/\^...\$/);
+console.log(pattern6.test('^lia$'));
+let pattern7=new RegExp(/sat*/);
+console.log(pattern6.test('sat'));
