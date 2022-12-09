@@ -7,9 +7,3 @@ function getnumber(x){
 }
 getnumber(1);
 
-int i=0;
-begin:
-i+=1;
-cout<<i<<endl;
-if(i<10){
- goto begin;
