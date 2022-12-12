@@ -1,0 +1,10 @@
+function show(x){
+    if(x%2==1){
+    console.log(x);
+    }
+    let y=x+1;
+    if(x<20){
+        show(y);
+    }
+}
+show(1);
