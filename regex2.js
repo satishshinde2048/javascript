@@ -1,6 +1,6 @@
 
 function validatenumber(number){
-    let regex=/([0-9]{2})([0-9]{5})([0-9]{5})/g
+    let regex=/([0-9]{2})[-]?([0-9]{5})([0-9]{5})/g
     let result=number.match(regex);
     if(result){
         console.log('valid number');
@@ -16,7 +16,7 @@ validatenumber(number);
 
 
 function validateemail(email){
-    let regex1=//g
+    let regex1=/^\S+@gmail\.com/g
     let result1=email.match(regex1);
     if(result1){
         console.log('valid email');
