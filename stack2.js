@@ -43,3 +43,8 @@ console.log(stack1.pop());
 console.log(stack1.peek());
 console.log(stack1.size());
 console.log(stack1.isemepty());
+
+
+/*this.front=this.front+1;
+            let de=this.arr[this.front];
+            return de;*/
