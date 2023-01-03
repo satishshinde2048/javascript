@@ -92,6 +92,7 @@ class linkedlist{
         }
         previous.next=null;
         this.tail=previous;
+        this.length--;
     }
     deleteat(index){
         if(this.head==null){
@@ -105,6 +106,29 @@ class linkedlist{
             return;
         }
         previous.next=previous.next.next;
+        this.length--;
+    }
+    size(){
+        //return this.length-1;
+        let counter=0;
+        let current=this.head;
+        while(current!=null){
+            counter++;
+            current=current.next;
+        }
+        return counter;
+    }
+    gethead(){
+        return this.head;
+    }
+    getlastnode(){
+        let counter=0;
+        let current=this.head;
+        while(current.next!=null){
+            counter++;
+            current=current.next;
+        }
+         return current;
     }
 }
 let newnode=new node(500);
@@ -120,3 +144,6 @@ newlist.deletefrombegining();
 newlist.deletelastnode();
 newlist.deleteat(1);
 newlist.print();
+console.log(newlist.size());
+console.log(newlist.gethead());
+console.log(newlist.getlastnode());
